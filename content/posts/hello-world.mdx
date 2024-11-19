@@ -1,0 +1,90 @@
+---
+title: "Getting Started with Next.js and MDX"
+date: "2024-03-14"
+description: "Learn how to build a modern blog using Next.js and MDX"
+tags: ["next.js", "mdx", "react"]
+---
+
+# Getting Started with Next.js and MDX
+
+Welcome to our first blog post! In this article, we'll explore how to build a modern blog using Next.js and MDX.
+
+## What is MDX?
+
+MDX is a powerful combination of Markdown and JSX that lets you write content with embedded React components.
+
+### Key Features
+
+- **Component Support**: Use React components directly in your markdown
+- **Syntax Highlighting**: Beautiful code blocks with proper highlighting
+- **Rich Content**: Support for images, links, and more
+
+```tsx
+// Example of a React component
+function Greeting({ name }) {
+  return <h1>Hello, {name}!</h1>;
+}
+```
+
+## Why Use Next.js with MDX?
+
+Next.js provides an excellent foundation for building modern web applications:
+
+1. **Performance** 
+   - Automatic code splitting
+   - Image optimization
+   - Static site generation
+
+2. **Developer Experience**
+   - Hot reload
+   - TypeScript support
+   - Built-in routing
+
+### Working with Images
+
+Here's an example of using optimized images:
+
+<Image
+  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+  alt="Coding on a laptop"
+  width={800}
+  height={400}
+  className="rounded-lg"
+/>
+
+## Code Examples
+
+Here's how you can style your components:
+
+```css
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+```
+
+And here's a React component example:
+
+```tsx
+function BlogPost({ title, content }) {
+  return (
+    <article className="prose">
+      <h1>{title}</h1>
+      <div>{content}</div>
+    </article>
+  );
+}
+```
+
+## Links and References
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [MDX Guide](https://mdxjs.com/docs/)
+- [Tailwind CSS](https://tailwindcss.com)
+
+## Tags
+
+#nextjs #mdx #react #webdev
+
+That's all for now! Stay tuned for more content.
